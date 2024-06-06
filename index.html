@@ -11,12 +11,17 @@
     <h2 class="title">Pass Generator</h2>
     <div class="line"></div>
     <div class="copy-code">
-      <div class="input-like" id="textDiv" contenteditable="true">
-        Code Generating...
-    </div>
+      <div class="input-like" id="textDiv" contenteditable="true">Code Generating...</div>
     <button class="copy-btn" onclick="copyText()">
       <ion-icon name="copy-outline"></ion-icon>
     </button>
+    </div>
+    <div class="password-lengt-container">
+      <h2 class="pass-title">Password Length</h2>
+      <div class="password-length">
+        <input type="range" min="0" max="30" value="15" class="slider" id="myRange">
+        <div class="value-display" id="valueDisplay">Value: 15</div>
+      </div>
     </div>
   </section>
   <script src="./script.js"></script>

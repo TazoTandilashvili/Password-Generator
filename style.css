@@ -51,3 +51,11 @@ body{
   display: flex;
   align-items: center;
 }
+.password-lengt-container{
+  margin-top: 20px;
+}
+.password-length{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}

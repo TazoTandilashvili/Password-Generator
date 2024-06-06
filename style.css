@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root{
+  --green: #40c057;
+  --gray: #e9ecef;
+  --darkGray: #adb5bd;
+}
+body{
+  background-color: var(--green);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-family: "Roboto", sans-serif;
+}
+.generator{
+  background-color: var(--gray);
+  border-radius: 8px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05);
+  padding: 15px;
+  width: 450px;
+}
+.title{
+  font-size: 30px;
+  margin-bottom: 15px;
+}
+.line{
+  height: 1px;
+  width: 100%;
+  background-color: var(--darkGray);
+}
+.copy-code{
+  margin-top: 20px;
+  border: 1px solid #adb5bd;
+  padding: 10px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.input-like {
+  font-size: 16px;
+  font-weight: 500;
+}
+.copy-btn{
+  all: unset;
+  display: flex;
+  align-items: center;
+}

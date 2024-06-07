@@ -11,18 +11,54 @@
     <h2 class="title">Pass Generator</h2>
     <div class="line"></div>
     <div class="copy-code">
-      <div class="input-like" id="textDiv" contenteditable="true">Code Generating...</div>
-    <button class="copy-btn" onclick="copyText()">
+      <input class="input-like" id="textDiv" placeholder="Generating Code..." readonly>
+    <button class="copy-btn" onclick="copyToClipboard()">
       <ion-icon name="copy-outline"></ion-icon>
     </button>
     </div>
     <div class="password-lengt-container">
-      <h2 class="pass-title">Password Length</h2>
-      <div class="password-length">
-        <input type="range" min="0" max="30" value="15" class="slider" id="myRange">
-        <div class="value-display" id="valueDisplay">Value: 15</div>
+      <div class="password-length-section">
+        <h2 class="section-title">Password Length</h2>
+        <div class="value-display" id="valueDisplay">15</div>
+        </div>
+      <input type="range" min="0" max="30" value="15" class="slider" id="myRange">
+    </div>
+    <div class="password-setting-section">
+      <h2 class="section-title passSet">Pass Settings</h2>
+      <div class="pass-settings-checkbox">
+        <!-- !lowercse -->
+          <div class="checkbox-item">
+              <input type="checkbox" class="property-checkbox" id="lowercase" name="lowercase" value="lowercase">
+              <label for="lowercase">lowercase</label>
+          </div>
+          <!-- !uppercase -->
+          <div class="checkbox-item">
+              <input type="checkbox" class="property-checkbox" id="uppercase" name="uppercase" value="uppercase">
+              <label for="uppercase">uppercase</label>
+          </div>
+          <!-- !numbers -->
+          <div class="checkbox-item">
+              <input type="checkbox" class="property-checkbox" id="number" name="number" value="number">
+              <label for="number">numbers</label>
+          </div>
+          <!-- !symbol -->
+          <div class="checkbox-item">
+              <input type="checkbox" class="property-checkbox" id="symbol" name="symbol" value="symbol">
+              <label for="symbol">symbol</label>
+          </div>
+          <!-- !no dublicate -->
+          <!-- <div class="checkbox-item">
+              <input type="checkbox" class="property-checkbox" id="exclude-duplicate" name="exclude-duplicate" value="exclude-duplicate">
+              <label for="exclude-duplicater">Exclude Duplicate</label>
+          </div> -->
+          <!-- !with spaces -->
+          <!-- <div class="checkbox-item">
+              <input type="checkbox" class="property-checkbox" id="include-spaces" name="include-spaces" value="include-spaces">
+              <label for="include-spaces">Include Spaces</label>
+          </div> -->
       </div>
     </div>
+    <button class="generate" onclick="generateBtn()">generate password</button>
   </section>
   <script src="./script.js"></script>
   <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>

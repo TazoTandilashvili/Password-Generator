@@ -6,6 +6,7 @@
 }
 :root{
   --green: #40c057;
+  --darkGreen: #2b8a3e;
   --gray: #e9ecef;
   --darkGray: #adb5bd;
 }
@@ -46,6 +47,12 @@ body{
   font-size: 16px;
   font-weight: 500;
 }
+.input-like{
+  border: none;
+  width: 100%;
+  background-color: transparent;
+  outline: none;
+}
 .copy-btn{
   all: unset;
   display: flex;
@@ -54,8 +61,50 @@ body{
 .password-lengt-container{
   margin-top: 20px;
 }
-.password-length{
+.password-length-section{
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin-bottom: 15px;
+}
+.section-title,
+.value-display{
+  font-size: 20px;
+  font-weight: 400;
+}
+.value-display{
+  font-size: 18px;
+}
+.slider{
+  width: 100%;
+}
+.passSet{
+  margin-bottom: 15px;
+}
+.pass-settings-checkbox{
+  display: flex;
+  flex-wrap: wrap;
+}
+.checkbox-item{
+  width: 50%;
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+.checkbox-item input {
+  margin-right: 10px;
+}
+
+.generate{
+  margin-top: 20px;
+  background-color: var(--darkGreen);
+  width: 100%;
+  padding: 10px;
+  border-radius: 8px;
+  border: none;
+  color: #FFFF;
+  font-size: 18px;
+  text-transform: uppercase;
+  letter-spacing: 1.36px;
+  line-height: 1.63;
 }
